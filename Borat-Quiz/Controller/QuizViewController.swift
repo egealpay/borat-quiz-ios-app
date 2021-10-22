@@ -53,12 +53,9 @@ class QuizViewController: UIViewController {
         }
     }
     
-    func navigateToResult() {
-        // < 4 ise WHAT???
-        // >= 4 ve <=7 ise Very Nice!
-        // 8>= ise Great Success!
-        
-        
+    @IBAction func unwindFromSegue(segue: UIStoryboardSegue) {
+        quizBrain.reset()
+        displayCurrentQuestion()
     }
     
 

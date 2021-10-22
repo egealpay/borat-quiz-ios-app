@@ -65,6 +65,11 @@ class QuizBrain {
         }
     }
     
+    func reset() {
+        currentQuestionIndex = 0
+        score = 0
+    }
+    
     func checkAnswer(userAnswer: String) -> Bool {
         let trueAnswer = questions[currentQuestionIndex].answer
         let result = userAnswer == trueAnswer

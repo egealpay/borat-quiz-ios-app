@@ -15,6 +15,8 @@
 		BA464CE827217421004193EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA464CE627217421004193EF /* LaunchScreen.storyboard */; };
 		BA464CF12722A49C004193EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CF02722A49C004193EF /* Question.swift */; };
 		BA464CF32722A505004193EF /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CF22722A505004193EF /* QuizBrain.swift */; };
+		BA464CF62722AE73004193EF /* no.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA464CF42722AE73004193EF /* no.mp3 */; };
+		BA464CFB2722B142004193EF /* is-nice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA464CFA2722B142004193EF /* is-nice.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		BA464CE927217421004193EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA464CF02722A49C004193EF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		BA464CF22722A505004193EF /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		BA464CF42722AE73004193EF /* no.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = no.mp3; sourceTree = "<group>"; };
+		BA464CFA2722B142004193EF /* is-nice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "is-nice.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 		BA464CDA27217420004193EF /* Borat-Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				BA464CF42722AE73004193EF /* no.mp3 */,
+				BA464CFA2722B142004193EF /* is-nice.mp3 */,
 				BA464CEF2722A47A004193EF /* Modal */,
 				BA464CDB27217420004193EF /* AppDelegate.swift */,
 				BA464CDD27217420004193EF /* SceneDelegate.swift */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA464CE827217421004193EF /* LaunchScreen.storyboard in Resources */,
+				BA464CFB2722B142004193EF /* is-nice.mp3 in Resources */,
+				BA464CF62722AE73004193EF /* no.mp3 in Resources */,
 				BA464CE527217421004193EF /* Assets.xcassets in Resources */,
 				BA464CE327217420004193EF /* Main.storyboard in Resources */,
 			);

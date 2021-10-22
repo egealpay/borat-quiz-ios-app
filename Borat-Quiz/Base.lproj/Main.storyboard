@@ -15,44 +15,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="d2f-aT-9WM">
-                                <rect key="frame" x="10" y="534" width="355" height="234"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="d2f-aT-9WM">
+                                <rect key="frame" x="10" y="538" width="355" height="230"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVX-1t-KFV">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVX-1t-KFV">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="DV5-3m-nk8"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Button" backgroundImage="rectangle-background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RTl-JJ-ZHC"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVR-G0-sqC">
-                                        <rect key="frame" x="0.0" y="87" width="355" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVR-G0-sqC">
+                                        <rect key="frame" x="0.0" y="85" width="355" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="qqP-ui-Ru3"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Button" backgroundImage="rectangle-background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fzi-UA-mSp"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ4-yK-ZQI">
-                                        <rect key="frame" x="0.0" y="174" width="355" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ4-yK-ZQI">
+                                        <rect key="frame" x="0.0" y="170" width="355" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="K4r-GI-64u"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Button" backgroundImage="rectangle-background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="loe-iT-Mxm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HX-5J-x0I">
-                                <rect key="frame" x="10" y="54" width="355" height="470"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HX-5J-x0I">
+                                <rect key="frame" x="20" y="54" width="345" height="474"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -63,12 +75,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d2f-aT-9WM" secondAttribute="trailing" constant="10" id="70E-Qh-V8h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d2f-aT-9WM" secondAttribute="bottom" constant="10" id="BBc-RJ-sZp"/>
                             <constraint firstItem="d2f-aT-9WM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="N9g-CY-wjb"/>
-                            <constraint firstItem="5HX-5J-x0I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Rxk-1r-wuq"/>
+                            <constraint firstItem="5HX-5J-x0I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rxk-1r-wuq"/>
                             <constraint firstItem="d2f-aT-9WM" firstAttribute="top" secondItem="5HX-5J-x0I" secondAttribute="bottom" constant="10" id="t5C-bc-QDp"/>
                             <constraint firstItem="5HX-5J-x0I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="zPj-KS-lph"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5HX-5J-x0I" secondAttribute="trailing" constant="10" id="zfw-Hh-56c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="vVX-1t-KFV" id="2Tn-S8-flf"/>
+                        <outlet property="choice2Button" destination="MVR-G0-sqC" id="qcG-vg-Epp"/>
+                        <outlet property="choice3Button" destination="NQ4-yK-ZQI" id="dO6-le-Lsf"/>
+                        <outlet property="questionTextLabel" destination="5HX-5J-x0I" id="cNz-ES-Y8o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

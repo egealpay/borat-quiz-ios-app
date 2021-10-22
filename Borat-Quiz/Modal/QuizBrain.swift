@@ -43,4 +43,22 @@ class QuizBrain {
     var currentQuestionIndex = 0
     var score = 0
     
+    func getQuestionText() -> String {
+        return questions[currentQuestionIndex].text
+    }
+    
+    func getQuestionOptions() -> [String] {
+        return questions[currentQuestionIndex].options
+    }
+    
+    func checkAnswer(userAnswer: String) -> Bool {
+        let trueAnswer = questions[currentQuestionIndex].answer
+        currentQuestionIndex += 1
+        return userAnswer == trueAnswer
+    }
+    
+    func isEndReached() -> Bool {
+        return currentQuestionIndex >= questions.count
+    }
+    
 }

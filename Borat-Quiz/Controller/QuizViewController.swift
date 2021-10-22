@@ -39,13 +39,25 @@ class QuizViewController: UIViewController {
         }
         
         if quizBrain.isEndReached() {
-            navigateToResult()
+            self.performSegue(withIdentifier: "goToResult", sender: self)
         } else {
             displayCurrentQuestion()
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult" {
+            let destinationVC = segue.destination as! ResultViewController
+            destinationVC.score = quizBrain.getScore()
+            destinationVC.message = quizBrain.getResultMessage()
+        }
+    }
+    
     func navigateToResult() {
+        // < 4 ise WHAT???
+        // >= 4 ve <=7 ise Very Nice!
+        // 8>= ise Great Success!
+        
         
     }
     

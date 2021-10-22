@@ -51,10 +51,30 @@ class QuizBrain {
         return questions[currentQuestionIndex].options
     }
     
+    func getScore() -> Int {
+        return score
+    }
+    
+    func getResultMessage() -> String {
+        if score < 4 {
+            return "WHAAT???"
+        } else if score <= 7 {
+            return "NICE!"
+        } else {
+            return "GREAT SUCCESS!!!"
+        }
+    }
+    
     func checkAnswer(userAnswer: String) -> Bool {
         let trueAnswer = questions[currentQuestionIndex].answer
+        let result = userAnswer == trueAnswer
+        
+        if result {
+            score += 1
+        }
+            
         currentQuestionIndex += 1
-        return userAnswer == trueAnswer
+        return result
     }
     
     func isEndReached() -> Bool {

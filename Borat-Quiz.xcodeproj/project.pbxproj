@@ -17,6 +17,7 @@
 		BA464CF32722A505004193EF /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CF22722A505004193EF /* QuizBrain.swift */; };
 		BA464CF62722AE73004193EF /* no.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA464CF42722AE73004193EF /* no.mp3 */; };
 		BA464CFB2722B142004193EF /* is-nice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA464CFA2722B142004193EF /* is-nice.mp3 */; };
+		BA464CFE2722B724004193EF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CFD2722B724004193EF /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BA464CF22722A505004193EF /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		BA464CF42722AE73004193EF /* no.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = no.mp3; sourceTree = "<group>"; };
 		BA464CFA2722B142004193EF /* is-nice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "is-nice.mp3"; sourceTree = "<group>"; };
+		BA464CFD2722B724004193EF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,7 @@
 				BA464CEF2722A47A004193EF /* Modal */,
 				BA464CDB27217420004193EF /* AppDelegate.swift */,
 				BA464CDD27217420004193EF /* SceneDelegate.swift */,
-				BA464CDF27217420004193EF /* QuizViewController.swift */,
+				BA464CFC2722B539004193EF /* Controller */,
 				BA464CE127217420004193EF /* Main.storyboard */,
 				BA464CE427217421004193EF /* Assets.xcassets */,
 				BA464CE627217421004193EF /* LaunchScreen.storyboard */,
@@ -85,6 +87,15 @@
 				BA464CF22722A505004193EF /* QuizBrain.swift */,
 			);
 			path = Modal;
+			sourceTree = "<group>";
+		};
+		BA464CFC2722B539004193EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA464CDF27217420004193EF /* QuizViewController.swift */,
+				BA464CFD2722B724004193EF /* ResultViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				BA464CF12722A49C004193EF /* Question.swift in Sources */,
 				BA464CDC27217420004193EF /* AppDelegate.swift in Sources */,
 				BA464CDE27217420004193EF /* SceneDelegate.swift in Sources */,
+				BA464CFE2722B724004193EF /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

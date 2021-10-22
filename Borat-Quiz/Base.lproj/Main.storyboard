@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="QuizViewController" customModule="Borat_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="d2f-aT-9WM">
-                                <rect key="frame" x="10" y="538" width="355" height="230"/>
+                                <rect key="frame" x="10" y="622" width="394" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVX-1t-KFV">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="DV5-3m-nk8"/>
                                         </constraints>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVR-G0-sqC">
-                                        <rect key="frame" x="0.0" y="85" width="355" height="60"/>
+                                        <rect key="frame" x="0.0" y="85" width="394" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="qqP-ui-Ru3"/>
                                         </constraints>
@@ -47,7 +47,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ4-yK-ZQI">
-                                        <rect key="frame" x="0.0" y="170" width="355" height="60"/>
+                                        <rect key="frame" x="0.0" y="170" width="394" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="K4r-GI-64u"/>
                                         </constraints>
@@ -63,7 +63,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HX-5J-x0I">
-                                <rect key="frame" x="20" y="54" width="345" height="474"/>
+                                <rect key="frame" x="20" y="54" width="384" height="558"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -86,11 +86,77 @@
                         <outlet property="choice2Button" destination="MVR-G0-sqC" id="qcG-vg-Epp"/>
                         <outlet property="choice3Button" destination="NQ4-yK-ZQI" id="dO6-le-Lsf"/>
                         <outlet property="questionTextLabel" destination="5HX-5J-x0I" id="cNz-ES-Y8o"/>
+                        <segue destination="sjq-Mk-lM0" kind="presentation" identifier="goToResult" id="BAl-eB-6OM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.40000000000001" y="116.00985221674877"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="L9Y-SC-dJf">
+            <objects>
+                <viewController id="sjq-Mk-lM0" customClass="ResultViewController" customModule="Borat_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="azU-pU-rAi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWd-eh-KUQ">
+                                <rect key="frame" x="20" y="748" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.81568627449999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="P0u-B3-TMg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <state key="normal" title="PLAY AGAIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgainButtonPressed:" destination="sjq-Mk-lM0" eventType="touchUpInside" id="TQ2-tG-LFb"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wmU-GV-jlC">
+                                <rect key="frame" x="116.5" y="323.5" width="181" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPG-Au-vd9">
+                                        <rect key="frame" x="50.5" y="0.0" width="80" height="35"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNy-MM-fNb">
+                                        <rect key="frame" x="81.5" y="50" width="18.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great Success" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-9u-xi2">
+                                        <rect key="frame" x="0.0" y="100" width="181" height="35"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pfc-m5-jIB"/>
+                        <color key="backgroundColor" red="0.31372549019607843" green="0.67843137254901964" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wmU-GV-jlC" firstAttribute="centerY" secondItem="azU-pU-rAi" secondAttribute="centerY" constant="-30" id="EL6-MH-Y7z"/>
+                            <constraint firstItem="rWd-eh-KUQ" firstAttribute="leading" secondItem="pfc-m5-jIB" secondAttribute="leading" constant="20" id="HDS-sw-P3N"/>
+                            <constraint firstItem="wmU-GV-jlC" firstAttribute="centerX" secondItem="azU-pU-rAi" secondAttribute="centerX" id="OBq-ml-bC3"/>
+                            <constraint firstItem="pfc-m5-jIB" firstAttribute="bottom" secondItem="rWd-eh-KUQ" secondAttribute="bottom" constant="10" id="dPl-Zb-gZ1"/>
+                            <constraint firstItem="pfc-m5-jIB" firstAttribute="trailing" secondItem="rWd-eh-KUQ" secondAttribute="trailing" constant="20" id="mQQ-Vg-wSA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="5Cl-9u-xi2" id="zPz-Rh-Rjm"/>
+                        <outlet property="scoreLabel" destination="rNy-MM-fNb" id="DIE-46-SFA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8O-ih-mSX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209" y="116"/>
         </scene>
     </scenes>
     <resources>

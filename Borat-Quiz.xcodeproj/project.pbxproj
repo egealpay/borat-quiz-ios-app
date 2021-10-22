@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		BA464CDC27217420004193EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CDB27217420004193EF /* AppDelegate.swift */; };
 		BA464CDE27217420004193EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CDD27217420004193EF /* SceneDelegate.swift */; };
-		BA464CE027217420004193EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CDF27217420004193EF /* ViewController.swift */; };
+		BA464CE027217420004193EF /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CDF27217420004193EF /* QuizViewController.swift */; };
 		BA464CE327217420004193EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA464CE127217420004193EF /* Main.storyboard */; };
 		BA464CE527217421004193EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA464CE427217421004193EF /* Assets.xcassets */; };
 		BA464CE827217421004193EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA464CE627217421004193EF /* LaunchScreen.storyboard */; };
+		BA464CF12722A49C004193EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CF02722A49C004193EF /* Question.swift */; };
+		BA464CF32722A505004193EF /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA464CF22722A505004193EF /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA464CD827217420004193EF /* Borat-Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Borat-Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA464CDB27217420004193EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA464CDD27217420004193EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA464CDF27217420004193EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA464CDF27217420004193EF /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		BA464CE227217420004193EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA464CE427217421004193EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA464CE727217421004193EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA464CE927217421004193EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA464CF02722A49C004193EF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		BA464CF22722A505004193EF /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		BA464CDA27217420004193EF /* Borat-Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				BA464CEF2722A47A004193EF /* Modal */,
 				BA464CDB27217420004193EF /* AppDelegate.swift */,
 				BA464CDD27217420004193EF /* SceneDelegate.swift */,
-				BA464CDF27217420004193EF /* ViewController.swift */,
+				BA464CDF27217420004193EF /* QuizViewController.swift */,
 				BA464CE127217420004193EF /* Main.storyboard */,
 				BA464CE427217421004193EF /* Assets.xcassets */,
 				BA464CE627217421004193EF /* LaunchScreen.storyboard */,
 				BA464CE927217421004193EF /* Info.plist */,
 			);
 			path = "Borat-Quiz";
+			sourceTree = "<group>";
+		};
+		BA464CEF2722A47A004193EF /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				BA464CF02722A49C004193EF /* Question.swift */,
+				BA464CF22722A505004193EF /* QuizBrain.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA464CE027217420004193EF /* ViewController.swift in Sources */,
+				BA464CF32722A505004193EF /* QuizBrain.swift in Sources */,
+				BA464CE027217420004193EF /* QuizViewController.swift in Sources */,
+				BA464CF12722A49C004193EF /* Question.swift in Sources */,
 				BA464CDC27217420004193EF /* AppDelegate.swift in Sources */,
 				BA464CDE27217420004193EF /* SceneDelegate.swift in Sources */,
 			);
